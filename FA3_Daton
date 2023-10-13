@@ -1,31 +1,30 @@
-	         body {
+	    body {
                  background-image: url("https://wallpapers.com/images/hd/totoro-satsuki-heavy-rain-icgrag41bn44z4bu.jpg");
                  background-repeat: no-repeat;
                  background-position: center;
-		             background-size: 960px 540px;
+		 background-size: 960px 540px;
              }
              h1 {
-		             background-color: #708238;
+		 background-color: #708238;
                  text-align: center;
-		             font-family: times;
+		 font-family: times;
                  border: 2px dotted blue;
                  padding: 10px 15px;
                  width: 250px;        
-		             margin-bottom: 20px;				 
+		 margin-bottom: 20px;				 
              }
              p  {
                  background-color: hsl( 215, 51%, 70%);
                  text-align: justify;
-		             font-style: italic;
+		 font-style: italic;
                  padding: 20px;
-		             border-style: solid dotted double dashed;
+		 border-style: solid dotted double dashed;
                  width: 500px;
              }
              span {
-		             font-weight: bold;
-		             font-style: italic;
+		 font-weight: bold;
+		 font-style: italic;
                  color: rgb(39, 22, 223);
-		             margin-left: 2px;
-		             margin-right: 5px;
+		 margin-left: 2px;
+		 margin-right: 5px;
              }
-  
