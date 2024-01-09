@@ -58,7 +58,7 @@ a.active,a:hover{
 }
 section {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -70,7 +70,7 @@ h1 {
 	font-family: "Copperplate", fantasy;
 	font-size: 90px;
 	margin: auto;
-	min-height: 50vh;
+	min-height: 40vh;
 	padding: 10px, 15px, 10px, 15px;
 	width: 800px;
 	margin-bottom: 20px;
