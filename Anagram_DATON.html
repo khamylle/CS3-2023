@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Anagram </title>
+    </head>
+    <body>
+        <script>
+
+        var input1 = prompt("Please Enter A Word/Phrase: ");
+        var input2 = prompt("Please Enter Another Word/Phrase: ");
+
+        function anagram(input1, input2){
+        return input1.toLowerCase().split('').sort().join('') == input2.toLowerCase().split('').sort().join('');
+        }
+
+        alert(anagram(input1, input2) ?"The words/phrases are anagrams of each other!" :"The words/phrases are NOT anagrams of each other");
+
+        </script>
+    </body>
+
+</html>
