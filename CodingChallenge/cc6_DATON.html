@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+	
+        <title> Coding Challenge 6</title>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <style>
+            body {
+                background-color: pink;
+            }
+        </style>
+		
+    </head>
+	
+    <body>
+
+        <h1> Quadratic Formula </h1>
+		<button onclick="solve()">Find The Root</button>
+		<h3 id = "formula"></h3>
+        <h4 id="result"></h4>
+
+        <script>
+		
+			document.getElementById("result").innerHTML= "[-b ± √b^2 - 4(a)(c)] / 2(a)";
+			
+            function solve(){
+			
+				var a = prompt("Please Enter Value for 'a':" );
+				var b = prompt("Please Enter Value for 'b':" );
+				var c = prompt("Please Enter Value for 'c':" );
+				
+				function innerSolve(){
+				
+					var dis = b*b - 4*a*c;
+					var x1 = (-b + Math.sqrt(dis))/2*a;
+					var x2 = (-b - Math.sqrt(dis))/2*a;
+				
+					if(dis == 0){
+						return "The values of x1 and x2 are equal! They are both = " + x1;
+					}
+				
+					else if(dis > 0 ){
+						return "Values are; x1 = " + x1 + " and x2 = " + x2; 
+					}
+				
+					else if(dis < 0 ){
+						return "The roots are imaginary";
+					}
+				}
+				
+			document.getElementById('result').innerHTML = innerSolve();
+			
+			}
+			
+        </script>
+		
+    </body>
+	
+</html>
