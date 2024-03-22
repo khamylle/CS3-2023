@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+	
+        <title>Coding Challenge 5</title>
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <style>	
+            body {
+                background-color: pink;
+            }
+        </style>
+		
+    </head>
+	
+    <body>
+	
+        <h1> Modified FLAMES </h1>
+        <button onclick="matchN()">Match Names</button>
+        <h3 id="name"></h3>
+        <h4>FLAMES Result:</h4>
+        <h3 id="result"></h3>
+
+        <script>
+			
+			function matchN(){
+
+				var input1 = prompt("Please Enter First Person's Name:" );
+				var name1 = input1.replace(/[`~!@#$%^&*()-_=+{}[]\|<>,:?;]/g ,'');
+				var input2 = prompt("Please Enter Second Person's Name:");
+				var name2 = input2.replace(/[`~!@#$%^&*()-_=+{}[]\|<>,:?;]/g ,'');
+				var flame = "FLAMES";
+			
+				document.getElementById('name').innerHTML = "<3 " + " " + input1 + " + " + input2 + " " + " <3";
+			
+				function flames(name1, name2, flame){
+			
+					var combine = name1 + name2;	
+					var result = combine.length % flame.length;
+				
+					if( result == 1){
+						return "sadly just FRIENDS! :((";
+					}
+					else if(result == 2){
+						return "~~~ooh LOVERS! ;3 ";
+					}
+					else if(result == 3){
+						return "oh... only ACQUAINTANCES! :<<";
+					}
+					else if(result == 4){
+						return "gonna have a MARRIAGE! >o<";
+					}
+					else if(result == 5){
+						return "oh no...ENEMIES! ^o^";
+					}
+					else{
+						return "yie~~~ SWEETHEARTS! :]]";
+					}   
+				}
+				
+				document.getElementById('result').innerHTML = input1 + " and " + input2 + " are... " + " " + flames(name1, name2, flame);
+			}
+			
+        </script>
+		
+    </body>
+	
